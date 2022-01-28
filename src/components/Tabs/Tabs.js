@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Tabs.scss";
-import { IoMdClose } from "react-icons/io";
+
 const Tabs = ({ children, initialTab }) => {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
 
@@ -18,7 +18,7 @@ const Tabs = ({ children, initialTab }) => {
           const label = tab.props.label;
           return (
             <li
-              className={label == activeTab ? "tab-bar-active" : "tab-bar"}
+              className={label === activeTab ? "tab-bar-active" : "tab-bar"}
               key={label}
             >
               <a
@@ -38,7 +38,7 @@ const Tabs = ({ children, initialTab }) => {
         })}
       </ul>
       {children.map((child) => {
-        if (child.props.label == activeTab)
+        if (child.props.label === activeTab)
           return (
             <div key={child.props.label} className="content">
               {child.props.children}

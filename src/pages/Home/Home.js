@@ -133,7 +133,11 @@ const Home = () => {
             </Tabs>
           ) : (
             <div className="empty-workspace">
-              <img src={Workspace} className="workspace-image" alt="image" />
+              <img
+                src={Workspace}
+                className="workspace-image"
+                alt="image-workspace"
+              />
               <text className="empty-workspace-1">
                 Your workspace is empty!
               </text>
