@@ -1,0 +1,78 @@
+$secondary-2: #08464b;
+
+.v-stepper {
+  position: relative;
+  // visibility: visible;
+}
+
+.icon-box {
+  position: static;
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  background: $secondary-2;
+  border: 0.751524px solid $secondary-2;
+  box-sizing: border-box;
+  border-radius: 4.50915px 0px 0px 4.50915px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.icon-text {
+  color: $secondary-2;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.rectangle {
+  padding: 0px;
+  width: fit-content;
+  height: 36px;
+  background: #fafafa;
+  border: 0.751524px solid $secondary-2;
+  box-sizing: border-box;
+  border-radius: 6.01219px;
+  display: flex;
+  justify-content: row;
+  flex-direction: space-between;
+}
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: cream;
+}
+
+.step .circle {
+  background-color: white;
+  border: 3px solid $secondary-2;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.step .line {
+  top: 23px;
+  left: 12px;
+  height: 90%;
+
+  position: absolute;
+  border-left: 3px solid $secondary-2;
+  z-index: -1;
+}
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1;
+}

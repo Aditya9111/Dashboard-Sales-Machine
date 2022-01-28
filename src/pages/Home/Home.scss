@@ -1,0 +1,155 @@
+$secondary: #41bcc3;
+$secondary-2: rgba(8, 70, 75, 1);
+
+.home {
+  height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-container {
+  flex: 0.22;
+  border-right: 1px solid;
+  border-color: #d3d3d3;
+}
+
+.workspace {
+  flex: 0.56;
+  border-right: 1px solid;
+  border-color: #d3d3d3;
+  padding: 20px;
+}
+
+.activity {
+  flex: 0.22;
+  border-right: 1px solid;
+  border-color: #d3d3d3;
+}
+.tabs-icons {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.tabs-icons:hover {
+  color: $secondary-2;
+}
+
+///////////////////
+
+.app-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e4e5e9;
+  border-bottom: 1px solid #e4e5e9;
+  margin: 0 30px 40px 20px;
+}
+
+.app-icons-1 {
+  width: 22px;
+  height: 16px;
+  margin-right: 20px;
+}
+
+.app-icons-2 {
+  width: 22px;
+  height: 16px;
+}
+
+////
+
+.call-to-action {
+  margin: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  color: $secondary;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background: $secondary;
+  box-shadow: 0px 4px 40px rgba(8, 70, 75, 0.22);
+  cursor: pointer;
+}
+
+.circle:hover {
+  width: 44px;
+  height: 44px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  background: $secondary-2;
+  box-shadow: 0px 4px 40px rgba(8, 70, 75, 0.22);
+}
+
+.tabs-button {
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 45px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border: 1px solid #41bcc3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+////////////////
+
+.empty-workspace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+.empty-workspace-1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5px;
+  color: #000000;
+}
+
+.empty-workspace-2 {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.container-step {
+  width: 100%;
+}
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+  // visibility: visible;
+}

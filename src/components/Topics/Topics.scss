@@ -1,0 +1,39 @@
+.topics {
+  margin: 20px;
+  color: #08464b;
+}
+
+.topic-text {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 900;
+}
+.topics-button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 13px;
+}
+
+.topic-button-1 {
+  border: 1px solid #08464b;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 100px;
+  height: 24.7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.topic-button-2 {
+  border: 1px solid #08464b;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  width: 100px;
+  height: 24.7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

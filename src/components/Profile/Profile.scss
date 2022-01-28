@@ -1,0 +1,72 @@
+.profile-info {
+  padding: 20px;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 40px;
+}
+
+.profile-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+}
+
+.profile-company {
+  font-size: 12px;
+  font-weight: 700;
+  padding-right: 13px;
+}
+
+.profile-employee {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+}
+
+.seperate {
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 13px;
+}
+
+.profile-icon {
+  width: 14px;
+  height: 9px;
+  margin-right: 4px;
+}
+
+.profile-icon-title-1 {
+  width: 14px;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.profile-icon-title-2 {
+  width: 14px;
+  height: 13px;
+}
+
+.profile-icon-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-link {
+  color: rgba(65, 188, 195, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

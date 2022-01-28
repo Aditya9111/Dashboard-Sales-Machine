@@ -1,0 +1,41 @@
+.heading-mail {
+  width: 529px;
+  height: 21px;
+  left: 16px;
+  top: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #242424;
+  margin-bottom: 25px;
+}
+
+.mail-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #595959;
+  margin-bottom: 3px;
+}
+
+.email {
+  font-size: 14px;
+  line-height: 16px;
+  color: #595959;
+}
+
+.mail-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mail-icons {
+  padding: 3px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.email-text {
+  font-size: 16px;
+}
