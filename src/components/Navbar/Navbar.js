@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="heading">
-        <img src={logo} className="logo" alt="logo" />
+        <img src={logo} className="logo" alt="logo-img" />
         <p className="heading-text">Sales Machine</p>
       </div>
       <div className="searchbar">

@@ -136,7 +136,7 @@ const Home = () => {
               <img
                 src={Workspace}
                 className="workspace-image"
-                alt="image-workspace"
+                alt="workspace"
               />
               <text className="empty-workspace-1">
                 Your workspace is empty!

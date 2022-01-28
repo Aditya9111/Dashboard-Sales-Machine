@@ -21,11 +21,7 @@ const Tabs = ({ children, initialTab }) => {
               className={label === activeTab ? "tab-bar-active" : "tab-bar"}
               key={label}
             >
-              <a
-                href="#"
-                className="a-tag"
-                onClick={(e) => handleClick(e, label)}
-              >
+              <a className="a-tag" onClick={(e) => handleClick(e, label)}>
                 <div className="tab-bar-inside">
                   <div>{label} </div>
                   {/* <div>

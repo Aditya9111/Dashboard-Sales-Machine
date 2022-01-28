@@ -27,7 +27,7 @@ const ActivityTab = ({ children }) => {
                 >
                   <div>
                     <div
-                      className={label == activeTab ? "progress-activity" : ""}
+                      className={label === activeTab ? "progress-activity" : ""}
                     >
                       {label}{" "}
                     </div>
@@ -40,7 +40,7 @@ const ActivityTab = ({ children }) => {
       </div>
       <div>
         {children.map((child) => {
-          if (child.props.label == activeTab)
+          if (child.props.label === activeTab)
             return (
               <div key={child.props.label} className="content">
                 {child.props.children}
