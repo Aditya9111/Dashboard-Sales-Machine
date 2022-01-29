@@ -5,7 +5,7 @@ import { IoIosShareAlt } from "react-icons/io";
 
 const Content = () => {
   return (
-    <div>
+    <div className="content-box">
       <div className="heading-mail">
         Invitation to join our organisation as a member of the board
       </div>
@@ -14,8 +14,8 @@ const Content = () => {
           <div className="mail-name">Aymeric Vanbock </div>
           <div className="email">amaud.renet@allaince-info.com</div>
         </div>
-        <div>
-          <div>Today 10:39AM</div>
+        <div className="mail-time-icon">
+          <div className="mail-time">Today 10:39AM</div>
           <div className="mail-icons">
             <div>
               <MdForward />

@@ -1,6 +1,9 @@
+.content-box {
+  width: 80%;
+  height: 50%;
+}
+
 .heading-mail {
-  width: 529px;
-  height: 21px;
   left: 16px;
   top: 22px;
   font-weight: 600;
@@ -38,4 +41,31 @@
 
 .email-text {
   font-size: 16px;
+}
+
+@media screen and (max-width: 730px) {
+  .heading-mail {
+    font-size: 15px;
+  }
+  .mail-name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #595959;
+    margin-bottom: 3px;
+  }
+
+  .email {
+    font-size: 10px;
+    line-height: 16px;
+    color: #595959;
+  }
+
+  .mail-time {
+    font-size: 10px;
+  }
+
+  .mail-icons {
+    font-size: 12px;
+  }
 }

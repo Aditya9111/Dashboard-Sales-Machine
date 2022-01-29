@@ -1,12 +1,9 @@
 import Home from "./pages/Home/Home";
-import { ToggleProvider } from "./components/Context/ToggleContext";
-
+import "./app.scss";
 function App() {
   return (
     <div className="App">
-      <ToggleProvider>
-        <Home />
-      </ToggleProvider>
+      <Home />
     </div>
   );
 }

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./Home.scss";
 import NavBar from "../../components/Navbar/Navbar";
 import Workspace from "../../assets/workspace.svg";
-import { MdEmail, MdCall, MdChatBubble } from "react-icons/md";
+import { MdEmail, MdCall, MdChatBubble, MdClose } from "react-icons/md";
 import { IoMdVideocam, IoMdCalendar } from "react-icons/io";
+import Task from "../../assets/task.svg";
+import Share from "../../assets/share.svg";
 import Tabs from "../../components/Tabs/Tabs";
 import Additional from "../../components/Additional/Additional";
 import Activity from "../../components/Activity/Activity";
@@ -27,7 +29,7 @@ const Home = () => {
   //   }
   //   console.log(links);
   // };
-
+  const [sidebar, setSidebar] = useState(false);
   const [toggletab1, settoggletab1] = useState(false);
   const [toggletab2, settoggletab2] = useState(false);
   const [toggletab3, settoggletab3] = useState(false);
@@ -41,10 +43,15 @@ const Home = () => {
   const togglefunction3 = () => {
     settoggletab3(!toggletab3);
   };
+  const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <div className="home">
-      <NavBar />
+      <NavBar
+        togglefunction1={togglefunction1}
+        togglefunction2={togglefunction2}
+        togglefunction3={togglefunction3}
+      />
       <div className="home-container">
         <div className="info-container">
           <ProfileInfo />
@@ -99,8 +106,31 @@ const Home = () => {
         {/* ///////////////////////// Workspace  ///////////////////////////////////////// */}
 
         <div className="workspace">
-          <div>
-            <text className="topic-text">Workspace</text>
+          <div
+            className={
+              sidebar ? "profile-sidebar-right active" : "profile-sidebar-right"
+            }
+          >
+            <div className="close-right">
+              <MdClose size={25} onClick={showSidebar} />
+            </div>
+            <div className="activity-right">
+              <Activity />
+            </div>
+          </div>
+
+          {/* /////////////Main Workspace///////////////////////// */}
+          <div className="workspace-title">
+            <div className="topic-text">Workspace</div>
+            <div>
+              <img className="topic-image" src={Share} alt="share" />
+              <img
+                className="topic-image"
+                src={Task}
+                alt="task"
+                onClick={showSidebar}
+              />
+            </div>
           </div>
 
           {toggletab1 || toggletab2 || toggletab3 ? (

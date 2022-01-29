@@ -30,7 +30,6 @@
 }
 
 .tab-bar {
-  width: 260px;
   height: 32px;
   background: #6f8c94;
   border-radius: 4px;
@@ -40,7 +39,6 @@
 }
 
 .tab-bar-active {
-  width: 260px;
   height: 32px;
   border-radius: 4px;
   color: white;
@@ -59,4 +57,62 @@
 .tab-bar-inside {
   display: flex;
   justify-content: space-between;
+}
+
+.tab-label {
+  width: 100%;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 730px) {
+  .tab-bar {
+    width: 110px;
+    height: 32px;
+    background: #6f8c94;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin-right: 3px;
+  }
+
+  .tab-bar-active {
+    width: 110px;
+    height: 32px;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin-right: 3px;
+    background: #08464b;
+    top: 5px;
+  }
+  .tab-label {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1023px) {
+  .tab-bar {
+    width: 110px;
+    height: 32px;
+    background: #6f8c94;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin-right: 3px;
+  }
+
+  .tab-bar-active {
+    width: 110px;
+    height: 32px;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    margin-right: 3px;
+    background: #08464b;
+    top: 5px;
+  }
+  .tab-label {
+    font-size: 10px;
+  }
 }

@@ -1,33 +1,30 @@
 $primarycolor: rgba(8, 38, 46, 1);
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  list-style: none;
-  font-family: 'Work Sans', sans-serif;
+.menu-bars {
+  margin-left: 5px;
+  font-size: 20px;
+  background: none;
+  text-align: center;
+  margin-right: 20px;
 }
 
-.logo{
+.logo {
   height: 22px;
   width: 25px;
   padding-right: 6px;
+  margin: 10px;
 }
 
-.avatar{
+.avatar {
   display: flex;
   align-items: center;
 }
 
-.navbaricon{
+.navbaricon {
   width: 15px;
   height: 13px;
-  margin:0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
-
 
 .navbar {
   display: flex;
@@ -39,7 +36,6 @@ $primarycolor: rgba(8, 38, 46, 1);
   height: 54px;
 }
 
-
 .heading {
   color: #fff;
   font-size: 15px;
@@ -47,6 +43,7 @@ $primarycolor: rgba(8, 38, 46, 1);
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .searchbar input[type="text"] {
@@ -60,7 +57,6 @@ $primarycolor: rgba(8, 38, 46, 1);
   padding: 10px;
   background-color: rgba(32, 62, 70, 1);
   color: #fff;
-
 }
 
 .searchbar input[type="text"]::placeholder {
@@ -70,22 +66,54 @@ $primarycolor: rgba(8, 38, 46, 1);
   font-size: 11px;
 }
 
+/////////////////////////////////////
+
+.profile-sidebar {
+  top: 0;
+  height: 100%;
+  width: 300px;
+  padding: 5px;
+  position: fixed;
+  background-color: white;
+  left: -100%;
+  transition: 600ms;
+  box-shadow: 1px 1px 3px 1px rgb(175, 175, 175);
+}
+
+.profile-sidebar.active {
+  left: 0;
+  transition: 250ms;
+}
+
+.close {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+//Mobile
 
 @media screen and (max-width: 730px) {
- .navbar {
+  .logo {
+    height: 22px;
+    width: 25px;
+    padding-right: 6px;
+    margin: 5px;
+  }
+  .navbar {
     padding: 0px;
     flex-direction: row;
     height: 89px;
     justify-content: center;
   }
 
-  .heading-text{
+  .heading-text {
     display: none;
   }
-  .avatar{
+  .avatar {
     display: none;
   }
- 
+
   .searchbar {
     margin-right: -10px;
   }
@@ -95,5 +123,21 @@ $primarycolor: rgba(8, 38, 46, 1);
     border-radius: 5px;
     margin-right: 10px;
     width: 250px;
+  }
+
+  .menu-bars {
+    margin-left: 5px;
+    font-size: 20px;
+    background: none;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
+//Tablet and Laptop
+
+@media only screen and (min-width: 768px) {
+  .menu-bars {
+    display: none;
   }
 }

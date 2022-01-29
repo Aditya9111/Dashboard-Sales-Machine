@@ -24,7 +24,7 @@ const Tabs = ({ children, initialTab }) => {
             >
               <p className="a-tag" onClick={(e) => handleClick(e, label)}>
                 <div className="tab-bar-inside">
-                  <div>{label} </div>
+                  <div className="tab-label">{label} </div>
                   <div>
                     <IoMdClose
                       color="white"
