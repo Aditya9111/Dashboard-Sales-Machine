@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Tabs.scss";
+import { IoMdClose } from "react-icons/io";
 
 const Tabs = ({ children, initialTab }) => {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
@@ -21,14 +22,17 @@ const Tabs = ({ children, initialTab }) => {
               className={label === activeTab ? "tab-bar-active" : "tab-bar"}
               key={label}
             >
-              <a className="a-tag" onClick={(e) => handleClick(e, label)}>
+              <p className="a-tag" onClick={(e) => handleClick(e, label)}>
                 <div className="tab-bar-inside">
                   <div>{label} </div>
-                  {/* <div>
-                    <IoMdClose />
-                  </div> */}
+                  <div>
+                    <IoMdClose
+                      color="white"
+                      onClick={tab.props.togglefunction}
+                    />
+                  </div>
                 </div>
-              </a>
+              </p>
             </li>
           );
         })}
@@ -40,6 +44,7 @@ const Tabs = ({ children, initialTab }) => {
               {child.props.children}
             </div>
           );
+        else return null;
       })}
     </div>
   );

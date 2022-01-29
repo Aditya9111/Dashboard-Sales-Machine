@@ -23,7 +23,7 @@ const ProfileInfo = () => {
             <div className="profile-employee">101-250</div>
           </div>
         </div>
-        <a href="#" className="profile-link">
+        <a href="https://www.ringover.com/" className="profile-link">
           www.ringover.com
         </a>
       </div>

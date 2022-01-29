@@ -20,7 +20,7 @@ const ActivityTab = ({ children }) => {
                 className={label === activeTab ? "progress-active" : "progress"}
                 key={label}
               >
-                <a
+                <p
                   href="#"
                   className="activity-tag"
                   onClick={(e) => handleClick(e, label)}
@@ -32,7 +32,7 @@ const ActivityTab = ({ children }) => {
                       {label}{" "}
                     </div>
                   </div>
-                </a>
+                </p>
               </li>
             );
           })}
@@ -46,6 +46,7 @@ const ActivityTab = ({ children }) => {
                 {child.props.children}
               </div>
             );
+          else return null;
         })}
       </div>
     </div>

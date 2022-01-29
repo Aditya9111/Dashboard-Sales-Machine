@@ -32,6 +32,16 @@ const Home = () => {
   const [toggletab2, settoggletab2] = useState(false);
   const [toggletab3, settoggletab3] = useState(false);
 
+  const togglefunction1 = () => {
+    settoggletab1(!toggletab1);
+  };
+  const togglefunction2 = () => {
+    settoggletab2(!toggletab2);
+  };
+  const togglefunction3 = () => {
+    settoggletab3(!toggletab3);
+  };
+
   return (
     <div className="home">
       <NavBar />
@@ -96,7 +106,7 @@ const Home = () => {
           {toggletab1 || toggletab2 || toggletab3 ? (
             <Tabs>
               {toggletab1 ? (
-                <div label="Mail">
+                <div label="Mail" togglefunction={togglefunction1}>
                   <Content />
                 </div>
               ) : (
@@ -104,7 +114,10 @@ const Home = () => {
               )}
 
               {toggletab2 ? (
-                <div label="Mail - Invitation to join o...">
+                <div
+                  label="Mail - Invitation to join o..."
+                  togglefunction={togglefunction2}
+                >
                   <h2>Your mails</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -118,7 +131,7 @@ const Home = () => {
               )}
 
               {toggletab3 ? (
-                <div label="Mail - Compose">
+                <div label="Mail - Compose" togglefunction={togglefunction3}>
                   <h2>Compose Mail</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
