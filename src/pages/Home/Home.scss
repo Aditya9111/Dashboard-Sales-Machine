@@ -169,9 +169,13 @@ $secondary-2: rgba(8, 70, 75, 1);
   // visibility: visible;
 }
 
-.topic-image {
+.topic-image-1 {
   padding: 5px;
   cursor: pointer;
+}
+
+.topic-image-2 {
+  display: none;
 }
 
 .workspace-title {
@@ -237,12 +241,20 @@ $secondary-2: rgba(8, 70, 75, 1);
   .workspace {
     flex: 1;
   }
+  .topic-image-2 {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+  }
 
   .workspace-title {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+  }
+  .topic-images {
+    display: flex;
   }
 }
 

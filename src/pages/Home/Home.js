@@ -122,10 +122,10 @@ const Home = () => {
           {/* /////////////Main Workspace///////////////////////// */}
           <div className="workspace-title">
             <div className="topic-text">Workspace</div>
-            <div>
-              <img className="topic-image" src={Share} alt="share" />
+            <div className="topic-images">
+              <img className="topic-image-1" src={Share} alt="share" />
               <img
-                className="topic-image"
+                className="topic-image-2"
                 src={Task}
                 alt="task"
                 onClick={showSidebar}
