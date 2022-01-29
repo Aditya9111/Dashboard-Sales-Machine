@@ -80,13 +80,28 @@ const NavBar = ({ togglefunction1, togglefunction2, togglefunction3 }) => {
                 <IoMdVideocam />
               </div>
               <div className="tabs-icons">
-                <IoMdCalendar onClick={togglefunction1} />
+                <IoMdCalendar
+                  onClick={() => {
+                    togglefunction1();
+                    showSidebar();
+                  }}
+                />
               </div>
               <div className="tabs-icons">
-                <MdEmail onClick={togglefunction2} />
+                <MdEmail
+                  onClick={() => {
+                    togglefunction2();
+                    showSidebar();
+                  }}
+                />
               </div>
               <div className="tabs-icons">
-                <MdChatBubble onClick={togglefunction3} />
+                <MdChatBubble
+                  onClick={() => {
+                    togglefunction3();
+                    showSidebar();
+                  }}
+                />
               </div>
             </div>
           </div>
